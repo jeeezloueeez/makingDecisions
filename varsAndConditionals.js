@@ -20,7 +20,7 @@ if (jonSnowHealth <= jamieLannisterAttack) {
   console.log(`Jon has survived the attack with ${jonSnowHealth} health remaining`);
 }
 
-jonSnowDefense += 25
+jonSnowDefense += 35
 
 if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
   console.log(`Jon Snow is dead`);
