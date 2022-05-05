@@ -1,4 +1,7 @@
-// for (let i = 0; i < 5; i++) {
-//   jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense);
-//   console.log(`Jon Snow's health is now ${jonSnowHealth}`);
+for (let i = 0; i < backpackTwo.length; i++) {
+//   console.log(backpackTwo[i])
+// }
+
+// for (let i = 0; i < backpack.length; i++) {
+//   console.log(backpack[i])
 // }

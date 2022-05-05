@@ -70,6 +70,71 @@ while (jonSnowHealth > 0){
   jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense);
   console.log(`Jon Snow's health is now ${jonSnowHealth}`);
   if (jonSnowHealth <= 0) {
-    console.log(`Jon Snow has been slain`)
+    console.log(`Jon Snow has been slain`);
+  }
+}
+
+let backpack = [];
+
+backpack.push('sword', `shield`, `food`);
+// backpack.unshift(`sword`, `shield`, `food`);
+// backpack.splice(0, 0, `sword`, `shield`, `food`);
+
+console.log(backpack);
+
+let belt = backpack.splice(0, 1);
+
+console.log(backpack);
+console.log(belt);
+
+let furCoat = `fur coat`;
+
+backpack.splice(2, 0, furCoat);
+console.log(backpack);
+console.log(belt);
+
+backpack.pop();
+console.log(backpack);
+
+let itemCount = backpack.length;
+console.log(itemCount)
+
+backpack.splice(3, 0, `flint`, `blanket`, `knife`, `toothbrush`);
+console.log(backpack)
+
+let backpackTwo = backpack.splice(2, 3)
+console.log(backpackTwo)
+
+// console.log(backpackTwo[0])
+
+// lets see the contents of jon's backpack
+
+// for (let i = 0; i < backpackTwo.length; i++) {
+//   console.log(backpackTwo[i])
+// }
+
+// for (let i = 0; i < backpack.length; i++) {
+//   console.log(backpack[i])
+// }
+
+
+
+if (backpackTwo.lenght >= 3) {
+  for (let i = 0; i < 3; i++) {
+    console.log(backpackTwo[i])
+  }
+} else {
+  for (let i = 0; i < backpackTwo.length; i++) {
+    console.log(backpackTwo[i])
+  }
+}
+
+if (backpack.lenght >= 3) {
+  for (let i = 0; i < 3; i++) {
+    console.log(backpack[i])
+  }
+} else {
+  for (let i = 0; i < backpackTwo.length; i++) {
+    console.log(backpack[i])
   }
 }
